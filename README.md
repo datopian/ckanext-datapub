@@ -18,3 +18,5 @@ It would:
 * install dependencies
 * build
 * update JS modules in fanstatic
+
+Next, you need to update the template to include correct bundles. In `/templates/datapub/snippets/upload_module.html`, edit the file names of the modules.
