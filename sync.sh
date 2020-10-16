@@ -4,4 +4,4 @@ yarn
 yarn build
 cd -
 rm -r ckanext/datapub/fanstatic/**/*
-cp datapub/build/static/* ckanext/datapub/fanstatic/
+cp -r datapub/build/static/* ckanext/datapub/fanstatic/
