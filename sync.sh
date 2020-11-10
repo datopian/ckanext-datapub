@@ -1,7 +1,12 @@
-git clone git@github.com:datopian/datapub.git
-cd datapub
-yarn
-yarn build
-cd -
-rm -r ckanext/datapub/fanstatic/**/*
-cp -r datapub/build/static/* ckanext/datapub/fanstatic/
+DATAPUB_APP={$DATAPUB_APP:=https://github.com/datopian/datapub}
+git clone $DATAPUB_APP‌
+cd datapub-gdx && npm install . && npm run build
+cd datapub-gdx
+wget https://raw.githubusercontent.com/johanhaleby/bash-templater/master/templater.sh
+for x in $(ls build/static/js/*.js build/static/css/*.css); do
+  bundles=$bundles"\{\% resource $x \%\}"\\n
+done
+
+cp -r build/static/* datapub/fanstatic/
+export RESOURCES=$(python -c "import sys;print(sys.argv[1].replace('build/static','datapub/fanstatic'))" "$bundles")
+bash templater.sh ../ckanext/datapub/templates/datapub/snippets/upload_module.template > ../ckanext/datapub/templates/datapub/snippets/upload_module.html
