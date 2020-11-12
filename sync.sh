@@ -8,4 +8,5 @@ done
 
 cp -r build/static/* datapub/fanstatic/
 export RESOURCES=$(python -c "import sys;print(sys.argv[1].replace('build/static','datapub/fanstatic'))" "$bundles")
-bash templater.sh ../ckanext/datapub/templates/datapub/snippets/upload_module.template > ../ckanext/datapub/templates/datapub/snippets/upload_module.html
+cd ..
+bash templater.sh ckanext/datapub/templates/datapub/snippets/upload_module.template > ckanext/datapub/templates/datapub/snippets/upload_module.html
