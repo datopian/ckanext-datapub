@@ -44,3 +44,4 @@ docs/_build/
 datapub
 !ckanext/datapub/
 !ckanext/datapub/templates/datapub/
+datapub-nhs
