@@ -41,6 +41,7 @@ coverage.xml
 # Sphinx documentation
 docs/_build/
 
-datapub
+datapub*
 !ckanext/datapub/
 !ckanext/datapub/templates/datapub/
+templater.sh

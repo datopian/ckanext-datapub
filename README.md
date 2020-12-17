@@ -11,12 +11,12 @@ Just follow standard procedure for setting up an extension for the CKAN and add 
 Setup JS modules:
 
 ```
-sh sync.sh
+DATAPUB_VERSION=v0.0.39; ./sync.sh
 ```
 
 It would:
 
-* git clone the datapub repo (can be any custom repo, by default, it is https://github.com/datopian/datapub)
+* git clone or update the datapub repo (can be any custom repo, by default, it is https://github.com/datopian/datapub-gdx)
 * install dependencies
 * build
 * update JS modules in fanstatic
