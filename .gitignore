@@ -1,3 +1,4 @@
+/.idea
 .ropeproject
 node_modules
 bower_components
@@ -43,4 +44,4 @@ docs/_build/
 
 datapub
 !ckanext/datapub/
-!ckanext/datapub/templates/datapub/
+!ckanext/datapub/templates/external_storage/
