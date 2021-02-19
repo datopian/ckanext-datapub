@@ -29,9 +29,9 @@ It would:
 <div id="ResourceEditor"
      data-dataset-id="{{ pkg_name }}"
      data-api="{{ base_url }}"
-     data-lfs="{{ h.extstorage_lfs_url() }}"
+     data-lfs="{{ h.blob_storage_lfs_url() }}"
      data-auth-token="{{ api_key }}"
-     data-organization-id="{{ h.extstorage_organization_name(pkg_name) }}"
+     data-organization-id="{{ h.blob_storage_organization_name(pkg_name) }}"
      data-resource-id="{{ resource_id }}">
 </div>
 ```

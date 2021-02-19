@@ -2,7 +2,7 @@
 
 DATAPUB_APP=${1:='https://github.com/datopian/datapub'}
 DATAPUB_VERSION=${2:='master'}
-UPLOAD_MODULE_PATH=ckanext/datapub/templates/external_storage/snippets/upload_module
+UPLOAD_MODULE_PATH=ckanext/datapub/templates/blob_storage/snippets/upload_module
 
 git clone --branch $DATAPUB_VERSION $DATAPUB_APP datapub
 wget https://raw.githubusercontent.com/johanhaleby/bash-templater/master/templater.sh

@@ -44,4 +44,4 @@ docs/_build/
 
 datapub
 !ckanext/datapub/
-!ckanext/datapub/templates/external_storage/
+!ckanext/datapub/templates/blob_storage/
