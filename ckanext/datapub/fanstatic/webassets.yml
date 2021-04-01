@@ -1,7 +1,8 @@
-datapub-js:
-  contents:
-    - js/*
-
 datapub-css:
-  contents:
-    - css/*
+ output: datapub/main.css
+ contents:
+ - css/*.css
+datapub-js:
+ output: datapub/main.js
+ contents:
+ - js/*.js
