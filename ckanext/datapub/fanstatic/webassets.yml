@@ -1,0 +1,7 @@
+datapub-js:
+  contents:
+    - js/*
+
+datapub-css:
+  contents:
+    - css/*
