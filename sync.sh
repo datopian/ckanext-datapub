@@ -1,22 +1,25 @@
 #!/bin/bash
 
-DATAPUB_APP=${1:='https://github.com/datopian/datapub'}
-DATAPUB_VERSION=${2:='master'}
-TAG=${3:='resource'}
+DATAPUB_APP=${1-'https://github.com/datopian/datapub'}
+DATAPUB_VERSION=${2-'master'}
+TAG=${3-'resource'}
 UPLOAD_MODULE_PATH=ckanext/datapub/templates/blob_storage/snippets/upload_module
 
 git clone --branch $DATAPUB_VERSION $DATAPUB_APP datapub
 wget https://raw.githubusercontent.com/johanhaleby/bash-templater/master/templater.sh
 
 cd datapub
-npm install . && npm run build
+npm install . && npm run build:ckan
 
 if [ $TAG = 'webasset' ]
 then
-  for x in "datapub/datapub-js datapub/datapub-css"; do
+  echo "Creating asset tags"
+  assets="datapub/datapub-js datapub/datapub-css"
+  for x in $assets; do
     bundles=$bundles"\{\% asset \"${x}\" \%\}"\\n
   done
 else
+  echo "Creating resource tags"
   for x in $(ls build/static/js/*.js build/static/css/*.css); do
     bundles=$bundles"\{\% resource \"${x}\" \%\}"\\n
   done
