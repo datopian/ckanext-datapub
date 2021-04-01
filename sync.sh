@@ -9,7 +9,7 @@ git clone --branch $DATAPUB_VERSION $DATAPUB_APP datapub
 wget https://raw.githubusercontent.com/johanhaleby/bash-templater/master/templater.sh
 
 cd datapub
-npm install . && npm run build:ckan
+npm install . && npm run build
 
 if [ $TAG = 'webasset' ]
 then
