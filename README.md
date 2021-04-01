@@ -39,12 +39,12 @@ It would:
 
 CKAN >= 2.9 uses webassets to manage all the bundles and the tag changed from `resource` to `asset`.
 
-In order to build an `upload_module.html` that runs on CKAN >= 2.9 you can pass `webasset` as third parameter.
+In order to build an `upload_module.html` that runs on CKAN >= 2.9 you can pass `webassets` as third parameter.
 
 Example:
 
 ```
-sh sync.sh https://github.com/datopian/datapub master webasset
+sh sync.sh https://github.com/datopian/datapub master webassets
 ```
 
 This will create an `upload_module.html` like the following one:
