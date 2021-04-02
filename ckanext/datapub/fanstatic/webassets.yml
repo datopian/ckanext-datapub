@@ -6,3 +6,4 @@ datapub-js:
  output: datapub/main.js
  contents:
  - js/*.*.*.js
+ - js/*.*.js
