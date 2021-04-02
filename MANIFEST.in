@@ -1,4 +1,5 @@
 include README.md
 include LICENSE
 include requirements.txt
-recursive-include ckanext/datapub *.html *.json *.js *.less *.css *.mo
+recursive-include ckanext/datapub/templates *
+recursive-include ckanext/datapub/fanstatic *
