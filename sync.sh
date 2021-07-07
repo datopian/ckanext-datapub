@@ -46,11 +46,6 @@ fi
 
 cd ..
 
-if [ ! -f templater.sh ]; then
-    echo "Downloading templater.sh..."
-    wget https://raw.githubusercontent.com/johanhaleby/bash-templater/master/templater.sh
-fi
-
 echo "Updating upload_module.html template..."
 export RESOURCES=$(python -c "import sys;print(sys.argv[1].replace('build/static','datapub'))" "$bundles")
 bash templater.sh ${UPLOAD_MODULE_PATH}.template > ${UPLOAD_MODULE_PATH}.html
