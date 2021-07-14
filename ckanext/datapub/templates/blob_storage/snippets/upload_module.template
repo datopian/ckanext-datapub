@@ -1,4 +1,4 @@
-{{RESOURCES}}
+{{ASSETS}}
 
 <div id="ResourceEditor"
      data-dataset-id="{{ pkg_id }}"
