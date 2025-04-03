@@ -1,5 +1,6 @@
 datapub-js:
-  output: ckanext-datapub/%(version)s-datapub.js
+  filter: rjsmin
+  output: ckanext-datapub/datapub.js
   contents:
     - js/2.a6bf2577.chunk.js
     - js/main.ed075c55.chunk.js
@@ -7,7 +8,7 @@ datapub-js:
 
 datapub-css:
   filter: cssrewrite
-  output: ckanext-datapub/%(version)s-datapub.css
+  output: ckanext-datapub/datapub.css
   contents:
     - css/2.13e0d705.chunk.css
     - css/main.ae0400cd.chunk.css
