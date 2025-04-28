@@ -9,7 +9,7 @@
   }
   .upload-area__drop__input {
     grid-area: drop;
-    padding: 1rem;
+    padding: 1.5rem;
     position: relative;
     display: grid;
     grid-template-columns: auto auto;
@@ -27,7 +27,7 @@
   }
   .upload-area__drop__input::-webkit-file-upload-button {
     flex-shrink: 0;
-    font-size: 0.65rem;
+    font-size: 1.2rem;
     color: #fff;
     border-radius: 3px;
     padding: 8px 15px;
@@ -52,7 +52,7 @@
     font-weight: 400;
     position: absolute;
     top: 55%;
-    font-size: 0.78rem;
+    font-size: 1.4rem;
     cursor: pointer;
   }
   .upload-area__url {
@@ -77,7 +77,7 @@
     color: #1a3b5d;
     font-family: "Source Sans Pro", sans-serif;
     box-sizing: border-box;
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
   .choose-btn {
     padding: 10px;
@@ -92,7 +92,7 @@
     font-weight: 700;
   }
   .choose-text {
-    font-size: 1rem;
+    font-size: 1.6rem;
     font-weight: 300;
   }
   .metadata-form {
@@ -143,7 +143,7 @@
     padding: 10px;
     width: 50%;
     height: 45px;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     color: #fff;
     background-color: #00a7e1;
     outline: none;
@@ -168,14 +168,14 @@
     fill: none;
   }
   .svg-circle-text {
-    font-size: 0.68rem;
+    font-size: 1.1rem;
     text-anchor: middle;
     margin-top: 30px;
     fill: #3f4656;
     font-weight: 700;
   }
   .time-remaining {
-    font-size: 0.55rem;
+    font-size: 0.8rem;
     float: left;
     margin-top: -13px;
     color: #3f4656;
@@ -190,7 +190,7 @@
     justify-items: center;
     align-content: center;
     justify-content: center;
-    margin: 1rem auto;
+    margin: 1.6rem auto;
   }
   .switch-number {
     border-radius: 50%;
@@ -215,7 +215,7 @@
     border: 1px solid #e3ebff;
   }
   .switch-description {
-    margin-top: 1rem;
+    margin-top: 1.6rem;
     width: 100%;
     cursor: pointer;
   }
@@ -227,11 +227,11 @@
     height: 2px;
     background-color: #e3ebff;
     width: 100%;
-    margin-bottom: 3rem;
+    margin-bottom: 4.8rem;
   }
   .table-container {
     margin-top: 2.6rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3.2rem;
     display: flex;
   }
   .table-schema-info_container {
@@ -259,7 +259,7 @@
     vertical-align: middle;
   }
   .table-schema-help_row {
-    padding: 1.3rem;
+    padding: 2rem;
   }
   .table-thead-tr {
     height: 50px;
@@ -327,4 +327,12 @@
     background: #e3e9ed !important;
     cursor: default;
   }
+}
+
+.table-container {
+  --bs-gutter-x: 2.5rem;
+}
+
+.table-container td, .table-container th {
+  font-size: 11.75px;
 }
