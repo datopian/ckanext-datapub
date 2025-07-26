@@ -2,8 +2,8 @@ datapub-js:
   filter: rjsmin
   output: ckanext-datapub/%(version)s-datapub.js
   contents:
-    - js/2.a6bf2577.chunk.js
-    - js/main.5e70dbf0.chunk.js
+    - js/2.5dd8c519.chunk.js
+    - js/main.78ce17ff.chunk.js
     - js/runtime-main.30b7bc45.js
 
 datapub-css:
